@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div class="hero-section">
+    <div class="hero-content">
+        <div class="portrait-container">
+            <img src="/images/bw-portrait.jpg" alt="Steve McGhee" class="portrait">
+        </div>
+        <div class="text-content">
+            <h1>{{ .Site.Params.homeInfoParams.Title }}</h1>
+            <p class="subtitle">{{ .Site.Params.homeInfoParams.Content }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="post-content">
+    {{ .Content }}
+</div>
+
+<style>
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/infrastructure/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    margin: -2rem -1rem 2rem -1rem;
+}
+
+.hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.portrait-container {
+    flex-shrink: 0;
+}
+
+.portrait {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.text-content {
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Custom theme colors */
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+}
+
+/* Enhance card styling */
+.entry-content {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.entry-content:hover {
+    transform: translateY(-5px);
+}
+</style>
+{{ end }} 

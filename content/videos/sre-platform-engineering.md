@@ -6,6 +6,7 @@ event: "YouTube"
 location: "Online"
 video: "https://www.youtube.com/watch?v=KC3qLPOFJso"
 type: "video"
+image: "/images/infrastructure/sre-platform.jpg"
 ---
 
 # Putting SRE Principles in Platform Engineering

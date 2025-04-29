@@ -2,13 +2,77 @@
 <div class="podcasts-list">
   {{ range .Site.Data.podcasts }}
     <div class="podcast-entry">
-      <h3>{{ .title }}</h3>
-      {{ with .date }}<p class="date">{{ . | dateFormat "January 2, 2006" }}</p>{{ end }}
-      {{ with .show }}<p class="show">Show: {{ . }}</p>{{ end }}
-      {{ with .description }}<p class="description">{{ . }}</p>{{ end }}
-      {{ with .link }}<p class="link"><a href="{{ . }}" target="_blank">Listen to Episode</a></p>{{ end }}
+      <a href="/podcasts/{{ .slug }}" class="podcast-link">
+        <h3>{{ .title }}</h3>
+        <div class="podcast-metadata">
+          {{ with .date }}<p class="date">{{ . | dateFormat "January 2, 2006" }}</p>{{ end }}
+          {{ with .show }}<p class="show">Show: {{ . }}</p>{{ end }}
+        </div>
+        {{ with .description }}<p class="description">{{ . }}</p>{{ end }}
+      </a>
+      <div class="podcast-links">
+        {{ with .link }}<a href="{{ . }}" target="_blank" class="listen-link">Listen to Episode</a>{{ end }}
+      </div>
     </div>
   {{ else }}
     <p>No podcast appearances found.</p>
   {{ end }}
-</div> 
+</div>
+
+<style>
+.podcasts-list {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.podcast-entry {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.podcast-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.podcast-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.podcast-link h3 {
+  margin: 0 0 1rem 0;
+  color: var(--primary);
+}
+
+.podcast-metadata {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+.podcast-links {
+  margin-top: 1rem;
+}
+
+.listen-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.listen-link:hover {
+  opacity: 0.9;
+}
+</style> 

@@ -1,35 +1,35 @@
-<!-- Talks List Template -->
-<div class="talks-list">
-  {{ range where .Page.Site.RegularPages "Section" "talks" }}
-    <div class="talk-entry">
-      <a href="{{ .RelPermalink }}" class="talk-link">
+<!-- Videos List Template -->
+<div class="videos-list">
+  {{ range where .Page.Site.RegularPages "Section" "videos" }}
+    <div class="video-entry">
+      <a href="{{ .RelPermalink }}" class="video-link">
         <h3>{{ .Title }}</h3>
-        <div class="talk-metadata">
+        <div class="video-metadata">
           {{ with .Date }}<p class="date">{{ .Format "January 2, 2006" }}</p>{{ end }}
           {{ with .Params.event }}<p class="event">{{ . }}</p>{{ end }}
           {{ with .Params.location }}<p class="location">{{ . }}</p>{{ end }}
         </div>
         {{ with .Description }}<p class="description">{{ . }}</p>{{ end }}
       </a>
-      <div class="talk-links">
+      <div class="video-links">
         {{ with .Params.slides }}<a href="{{ . }}" target="_blank" class="slides-link">View Slides</a>{{ end }}
         {{ with .Params.video }}<a href="{{ . }}" target="_blank" class="video-link">Watch Video</a>{{ end }}
         {{ with .Params.resources }}<a href="{{ . }}" target="_blank" class="resources-link">Additional Resources</a>{{ end }}
       </div>
     </div>
   {{ else }}
-    <p>No talks found.</p>
+    <p>No videos found.</p>
   {{ end }}
 </div>
 
 <style>
-.talks-list {
+.videos-list {
   display: grid;
   gap: 2rem;
   margin: 2rem 0;
 }
 
-.talk-entry {
+.video-entry {
   background: white;
   border-radius: 8px;
   padding: 1.5rem;
@@ -37,22 +37,22 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.talk-entry:hover {
+.video-entry:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.talk-link {
+.video-link {
   text-decoration: none;
   color: inherit;
 }
 
-.talk-link h3 {
+.video-link h3 {
   margin: 0 0 1rem 0;
   color: var(--primary);
 }
 
-.talk-metadata {
+.video-metadata {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -60,13 +60,13 @@
   font-size: 0.9rem;
 }
 
-.talk-links {
+.video-links {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.talk-links a {
+.video-links a {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -89,7 +89,7 @@
   color: white;
 }
 
-.talk-links a:hover {
+.video-links a:hover {
   opacity: 0.9;
 }
 </style> 
