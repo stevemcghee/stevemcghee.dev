@@ -4,14 +4,14 @@ date: 2021-10-12
 description: "Introduction to Service Level Indicators and Objectives"
 event: "Virtual Event"
 location: "Virtual"
-video: "https://www.youtube.com/watch?v=[video-id]"
+video: "https://www.youtube.com/watch?v=uYC2kcndtVs"
 ---
 
 # Getting Started with SLI/SLO
 
 A comprehensive introduction to Service Level Indicators (SLIs) and Service Level Objectives (SLOs).
 
-{{< youtube [video-id] >}}
+{{< youtube "uYC2kcndtVs" >}}
 
 ## Abstract
 
@@ -23,4 +23,4 @@ This talk covers:
 
 ## Resources
 
-- [Video Recording](https://www.youtube.com/watch?v=[video-id]) 
+- [Video Recording](https://www.youtube.com/watch?v=uYC2kcndtVs) 

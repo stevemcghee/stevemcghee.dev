@@ -1,0 +1,21 @@
+<!-- Talks List Template -->
+<div class="talks-list">
+  {{ range .Site.Data.talks }}
+    <div class="talk-entry">
+      <h3>{{ .title }}</h3>
+      <div class="talk-metadata">
+        {{ with .date }}<p class="date">{{ . | dateFormat "January 2, 2006" }}</p>{{ end }}
+        {{ with .event }}<p class="event">{{ . }}</p>{{ end }}
+        {{ with .location }}<p class="location">{{ . }}</p>{{ end }}
+      </div>
+      {{ with .description }}<p class="description">{{ . }}</p>{{ end }}
+      <div class="talk-links">
+        {{ with .slides }}<a href="{{ . }}" target="_blank" class="slides-link">View Slides</a>{{ end }}
+        {{ with .video }}<a href="{{ . }}" target="_blank" class="video-link">Watch Video</a>{{ end }}
+        {{ with .resources }}<a href="{{ . }}" target="_blank" class="resources-link">Additional Resources</a>{{ end }}
+      </div>
+    </div>
+  {{ else }}
+    <p>No talks found.</p>
+  {{ end }}
+</div> 

@@ -1,0 +1,25 @@
+<!-- Blog List Template -->
+<div class="blog-list">
+  {{ $pages := where .Site.RegularPages "Section" "blog" }}
+  {{ range $pages.ByDate.Reverse }}
+    <article class="blog-entry">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div class="metadata">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ with .Params.tags }}
+        <div class="tags">
+          {{ range . }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ with .Description }}
+        <p class="description">{{ . }}</p>
+      {{ end }}
+      <a href="{{ .RelPermalink }}" class="read-more">Read more →</a>
+    </article>
+  {{ else }}
+    <p>No blog posts found.</p>
+  {{ end }}
+</div> 

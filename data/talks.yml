@@ -1,0 +1,9 @@
+# Example talk entry - replace with your actual talks
+- title: "Example Conference Talk"
+  date: "2024-03-20"
+  event: "Sample Tech Conference"
+  location: "San Francisco, CA"
+  description: "A talk about modern software engineering practices and leadership"
+  slides: "https://example.com/slides"
+  video: "https://example.com/video"
+  resources: "https://example.com/resources" 
