@@ -1,25 +1,22 @@
 ---
-title: "Getting Started with SLI/SLO"
-date: 2021-10-12
-description: "Introduction to Service Level Indicators and Objectives"
-event: "Virtual Event"
-location: "Virtual"
+title: "How to get started with SLI/SLO"
+date: 2023-08-15
+description: "Steve McGhee shares his expertise on SLI/SLO implementation at Google"
+event: "YouTube"
+location: "Online"
 video: "https://www.youtube.com/watch?v=uYC2kcndtVs"
+type: "video"
 ---
 
-# Getting Started with SLI/SLO
+# How to get started with SLI/SLO
 
-A comprehensive introduction to Service Level Indicators (SLIs) and Service Level Objectives (SLOs).
+A practical guide to implementing Service Level Indicators and Objectives.
 
 {{< youtube "uYC2kcndtVs" >}}
 
 ## Abstract
 
-This talk covers:
-- What are SLIs?
-- What are SLOs?
-- How does Google apply SLIs/SLOs?
-- Tools to implement SLIs/SLOs in your organization
+This talk provides a comprehensive introduction to Service Level Indicators (SLIs) and Service Level Objectives (SLOs). We cover the fundamentals of SLI/SLO implementation, best practices, and how to get started with these important reliability metrics.
 
 ## Resources
 
