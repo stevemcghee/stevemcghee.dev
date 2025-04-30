@@ -1,0 +1,100 @@
+baseURL: "https://stevemcghee.dev/"
+languageCode: "en-us"
+title: "Steve McGhee"
+theme: "PaperMod"
+
+params:
+  env: "production"
+  description: "Personal website of Steve McGhee - Software Engineer, Speaker, and Podcaster"
+  author: "Steve McGhee"
+  defaultTheme: "auto"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  disableThemeToggle: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  sort:
+    podcasts: "date"
+    videos: "date"
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/stevemcghee"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/stevemcghee"
+
+  profileMode:
+    enabled: true
+    title: "Steve McGhee"
+    subtitle: "Software Engineer, Speaker, and Podcaster"
+    imageUrl: ""
+    imageTitle: "Steve McGhee"
+    imageWidth: 250
+    imageHeight: 250
+
+  homeInfoParams:
+    Title: "Steve McGhee"
+    Content: "Software Engineer, Speaker, and Podcaster"
+
+  assets:
+    disableHLJS: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  share:
+    enable: true
+    twitter: true
+    linkedin: true
+    facebook: false
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About"
+      url: "/about/"
+      weight: 10
+    - identifier: "videos"
+      name: "Videos"
+      url: "/videos/"
+      weight: 20
+    - identifier: "podcasts"
+      name: "Podcasts"
+      url: "/podcasts/"
+      weight: 30
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog/"
+      weight: 40
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    noClasses: false
+    style: "dracula"
+
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: "github"
+      attribute:
+        block: true
+        title: true 
