@@ -26,6 +26,11 @@ theme = "PaperMod"
   showtoc = false
   tocopen = false
 
+  # Sort content by date in descending order
+  [params.sort]
+    podcasts = "date"
+    videos = "date"
+
   # Custom social icons
   [[params.socialIcons]]
   name = "github"
@@ -57,6 +62,13 @@ theme = "PaperMod"
   favicon16x16 = "/favicon-16x16.png"
   favicon32x32 = "/favicon-32x32.png"
   apple_touch_icon = "/apple-touch-icon.png"
+
+  # Share buttons configuration
+  [params.share]
+  enable = true
+  twitter = true
+  linkedin = true
+  facebook = false
 
 [menu]
   [[menu.main]]

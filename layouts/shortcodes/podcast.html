@@ -1,8 +1,8 @@
 <!-- Podcast List Template -->
 <div class="podcasts-list">
-  {{ range .Site.Data.podcasts }}
+  {{ range sort .Site.Data.podcasts "date" "desc" }}
     <div class="podcast-entry">
-      <a href="/podcasts/{{ .slug }}" class="podcast-link">
+      <a href="{{ .link }}" class="podcast-link" target="_blank">
         <h3>{{ .title }}</h3>
         <div class="podcast-metadata">
           {{ with .date }}<p class="date">{{ . | dateFormat "January 2, 2006" }}</p>{{ end }}
@@ -11,11 +11,9 @@
         {{ with .description }}<p class="description">{{ . }}</p>{{ end }}
       </a>
       <div class="podcast-links">
-        {{ with .link }}<a href="{{ . }}" target="_blank" class="listen-link">Listen to Episode</a>{{ end }}
+        <a href="{{ .link }}" target="_blank" class="listen-link">Listen to Episode</a>
       </div>
     </div>
-  {{ else }}
-    <p>No podcast appearances found.</p>
   {{ end }}
 </div>
 

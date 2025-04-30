@@ -1,0 +1,9 @@
+{{- if .Site.Params.socialIcons }}
+<div class="social-icons">
+    {{- range .Site.Params.socialIcons }}
+    <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="social-icon {{ .name }}">
+        <i class="fab fa-{{ .name }}"></i>
+    </a>
+    {{- end }}
+</div>
+{{- end }} 

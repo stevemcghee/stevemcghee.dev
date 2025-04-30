@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{ if eq .Title "About Steve McGhee" }}
+    {{ partial "about_content.html" . }}
+  {{ else }}
+    <main class="main">
+      <article class="post-single">
+        <header class="post-header">
+          <h1 class="post-title">{{ .Title }}</h1>
+        </header>
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+      </article>
+    </main>
+  {{ end }}
+{{ end }} 

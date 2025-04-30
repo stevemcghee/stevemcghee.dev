@@ -33,11 +33,13 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
+    overflow: hidden;
 }
 
 .nav a {
     position: relative;
-    transition: var(--transition-speed);
+    display: inline-block;
+    padding-bottom: 4px;
 }
 
 .nav a::after {
@@ -45,10 +47,10 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -4px;
+    bottom: 0;
     left: 0;
     background-color: var(--accent-color);
-    transition: var(--transition-speed);
+    transition: width 0.3s ease;
 }
 
 .nav a:hover::after {

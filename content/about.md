@@ -22,7 +22,5 @@ I'm Steve McGhee, a software engineer passionate about technology, sharing knowl
 ## Contact
 
 Feel free to reach out to me through:
-- Email: [your email]
-- Twitter: [@yourhandle]
-- LinkedIn: [your LinkedIn profile]
-- GitHub: [your GitHub profile] 
+
+{{ partial "social_icons.html" . }} 
