@@ -6,9 +6,8 @@ theme = "PaperMod"
 [params]
   env = "production"
   description = "Personal website of Steve McGhee - Software Engineer, Speaker, and Podcaster"
-  keywords = ["Steve McGhee", "Software Engineering", "Videos", "Podcasts", "Blog"]
   author = "Steve McGhee"
-  defaultTheme = "solara"
+  defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -19,56 +18,12 @@ theme = "PaperMod"
   UseHugoToc = false
   disableSpecial1stPost = false
   disableScrollToTop = false
-  disableThemeToggle = true
+  disableThemeToggle = false
   comments = false
   hidemeta = false
   hideSummary = false
   showtoc = false
   tocopen = false
-
-  # Sort content by date in descending order
-  [params.sort]
-    podcasts = "date"
-    videos = "date"
-
-  # Custom social icons
-  [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/stevemcghee"
-
-  [[params.socialIcons]]
-  name = "linkedin"
-  url = "https://linkedin.com/in/stevemcghee"
-
-  # Profile mode
-  [params.profileMode]
-  enabled = true
-  title = "Steve McGhee"
-  subtitle = "Software Engineer, Speaker, and Podcaster"
-  imageUrl = ""
-  imageTitle = "Steve McGhee"
-  imageWidth = 250
-  imageHeight = 250
-
-  # Home Info Mode
-  [params.homeInfoParams]
-  Title = "Steve McGhee"
-  Content = "Software Engineer, Speaker, and Podcaster"
-
-  # Theme appearance
-  [params.assets]
-  disableHLJS = true
-  favicon = "/favicon.ico"
-  favicon16x16 = "/favicon-16x16.png"
-  favicon32x32 = "/favicon-32x32.png"
-  apple_touch_icon = "/apple-touch-icon.png"
-
-  # Share buttons configuration
-  [params.share]
-  enable = true
-  twitter = true
-  linkedin = true
-  facebook = false
 
 [menu]
   [[menu.main]]
