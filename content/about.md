@@ -4,6 +4,7 @@ date: 2024-03-20
 description: "About Steve McGhee - Software Engineer, Speaker, and Podcaster"
 ---
 
+{{< about >}}
 # About Me
 
 I'm Steve McGhee, a software engineer passionate about technology, sharing knowledge, and building great software. 
@@ -18,6 +19,7 @@ I'm Steve McGhee, a software engineer passionate about technology, sharing knowl
 - Public Speaking
 - Podcasting
 - [Add your other interests]
+{{< /about >}}
 
 ## Contact
 

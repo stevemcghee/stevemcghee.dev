@@ -5,12 +5,6 @@
 #  description: "Discussion about technology and engineering leadership"
 #  link: "https://example.com/podcast-episode" 
 
-- title: "The Reliability Diagnosis: Debugging and Incident Response"
-  date: "2025-02-10"
-  show: "The Reliability Diagnosis"
-  description: "A deep dive into debugging and incident response practices with stories from Google and enterprise SRE implementation"
-  link: "https://podcasts.apple.com/podcast/the-reliability-diagnosis-googles-steve-mcghee-on-debugging"
-
 - title: "Slight Reliability Episode 7"
   date: "2023-11-14"
   show: "Slight Reliability"

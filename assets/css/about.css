@@ -1,8 +1,3 @@
-<div class="about-content">
-  {{ .Inner | markdownify }}
-</div>
-
-<style>
 .about-content {
   max-width: 800px;
   margin: 2rem auto;
@@ -32,5 +27,4 @@
 
 .about-content li {
   margin-bottom: 0.5rem;
-}
-</style> 
+} 

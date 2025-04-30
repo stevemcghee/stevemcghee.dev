@@ -6,6 +6,6 @@ description: "Blog posts by Steve McGhee"
 
 # Blog
 
-Welcome to my blog where I share thoughts, experiences, and insights about software engineering, technology, and more.
+Welcome to my blog where I share thoughts, experiences, and insights about site reliability engineering.
 
 {{< blog >}} 

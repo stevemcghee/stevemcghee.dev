@@ -5,7 +5,7 @@ description: "Software Engineer, Speaker, and Podcaster"
 
 # Welcome
 
-I'm Steve McGhee, a Software Engineer, Speaker, and Podcaster focused on Site Reliability Engineering (SRE) and Platform Engineering.
+I'm Steve McGhee, a Software Engineer, Speaker, and Podcaster focused on Site Reliability Engineering (SRE), DevOps, and Platform Engineering.
 
 ## Latest Content
 
