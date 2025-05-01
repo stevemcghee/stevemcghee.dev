@@ -10,13 +10,13 @@ type: "video"
 
 # Infrastructure as code
 
-A practical guide to implementing infrastructure as code.
+An introduction to managing infrastructure through code.
 
 {{< youtube "84Ql00Bjh1Y" >}}
 
 ## Abstract
 
-This talk provides an introduction to infrastructure as code (IaC) and its benefits. We discuss best practices, tools, and strategies for implementing IaC in your organization, with a focus on reliability and maintainability.
+This talk provides a comprehensive introduction to Infrastructure as Code (IaC), covering fundamental concepts, best practices, and practical approaches to getting started with managing infrastructure programmatically.
 
 ## Resources
 

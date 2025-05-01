@@ -10,13 +10,13 @@ type: "video"
 
 # Build Reliable Applications with Kubernetes and Istio
 
-A guide to building reliable applications using Kubernetes and Istio.
+A deep dive into building reliable applications using Kubernetes and Istio.
 
 {{< youtube "hGQQf8keyCw" >}}
 
 ## Abstract
 
-This talk explores how to build reliable applications using Kubernetes and Istio. We discuss practical approaches to implementing reliability patterns, service mesh capabilities, and best practices for running applications in production.
+Steve McGhee and Ameer Abbas explore the intersection of reliability engineering with Kubernetes and Istio, demonstrating how these technologies can be leveraged to build and maintain reliable applications at scale.
 
 ## Resources
 

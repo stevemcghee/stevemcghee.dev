@@ -10,13 +10,13 @@ type: "video"
 
 # Safe serverless deployments with Cloud Run
 
-Best practices for deploying serverless applications safely.
+Learn how to implement safe deployment practices in serverless environments.
 
 {{< youtube "ArDuQDjW-DQ" >}}
 
 ## Abstract
 
-This talk covers strategies and best practices for safely deploying serverless applications using Cloud Run. We discuss deployment patterns, rollback strategies, and monitoring approaches to ensure reliable serverless deployments.
+This presentation covers best practices and strategies for implementing safe deployment patterns in serverless environments using Cloud Run, ensuring reliability and minimizing risk during deployments.
 
 ## Resources
 

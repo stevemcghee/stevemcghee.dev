@@ -12,11 +12,11 @@ type: "video"
 
 A lightning talk on the fundamentals of observability and open standards.
 
-{{< youtube "OdLnC8sjPCI" >}}
+{{< youtube "observability-fundamentals-open-standards" >}}
 
 ## Abstract
 
-This lightning talk covers the essential concepts of observability and the importance of open standards in building observable systems. We discuss practical approaches to implementing observability and how open standards can help create more maintainable and interoperable systems.
+In this lightning talk, Steve McGhee covers the essential concepts of observability and the importance of open standards in building observable systems.
 
 ## Resources
 

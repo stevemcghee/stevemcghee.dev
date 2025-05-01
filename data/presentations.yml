@@ -1,0 +1,17 @@
+# Example presentation entry - replace with your actual presentations
+#- title: "Example Presentation"
+#  date: "2024-03-20"
+#  event: "Sample Tech Conference"
+#  location: "Virtual"
+#  type: "technical"
+#  description: "Discussion about technology and engineering leadership"
+#  link: "https://example.com/presentation" 
+
+- title: "TBD"
+  date: "2024-01-01"
+  event: "TBD"
+  location: "TBD"
+  type: "technical"
+  description: "Coming soon"
+  link: "#"
+

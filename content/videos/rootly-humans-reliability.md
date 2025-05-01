@@ -10,13 +10,13 @@ type: "video"
 
 # Rootly Humans of Reliability
 
-A discussion about reliability engineering and its human aspects.
+A discussion about reliability engineering and its impact on modern systems.
 
 {{< youtube "oL5U5-JFyxo" >}}
 
 ## Abstract
 
-In this video segment, we explore the human side of reliability engineering. The discussion covers the role of reliability engineers, their challenges, and the importance of human factors in building and maintaining reliable systems.
+In this segment with Rootly, Steve McGhee shares insights about his role in reliability engineering and discusses the importance of human factors in building and maintaining reliable systems.
 
 ## Resources
 

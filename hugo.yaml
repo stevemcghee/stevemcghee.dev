@@ -71,6 +71,10 @@ menu:
       name: "Videos"
       url: "/videos/"
       weight: 20
+    - identifier: "presentations"
+      name: "Presentations"
+      url: "/presentations/"
+      weight: 25
     - identifier: "podcasts"
       name: "Podcasts"
       url: "/podcasts/"

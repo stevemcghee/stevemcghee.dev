@@ -5,17 +5,18 @@ description: "Presentation on implementing SRE in enterprise environments"
 event: "DevOpsDays Boston 2022"
 location: "Boston, MA"
 video: "https://www.youtube.com/watch?v=QJz6bhdtcyw"
+type: "video"
 ---
 
 # Enterprise Roadmap for SRE
 
-Presented with James Brookbank at DevOpsDays Boston 2022, discussing the enterprise roadmap for implementing SRE practices.
+A comprehensive guide to implementing SRE practices in enterprise environments.
 
 {{< youtube "QJz6bhdtcyw" >}}
 
 ## Abstract
 
-We step through the report "Getting Started with Enterprise SRE" and discuss why SRE practices are crucial for modern enterprises.
+This presentation provides a detailed roadmap for implementing Site Reliability Engineering (SRE) practices in enterprise environments, covering strategies, challenges, and best practices for successful adoption.
 
 ## Resources
 

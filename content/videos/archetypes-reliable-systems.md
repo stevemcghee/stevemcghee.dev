@@ -10,13 +10,13 @@ type: "video"
 
 # Archetypes for Reliable Systems
 
-A framework for understanding and implementing reliable systems through common archetypes and patterns.
+Understanding common patterns and models for building reliable cloud services.
 
 {{< youtube "OdLnC8sjPCI" >}}
 
 ## Abstract
 
-We present a framework for understanding and implementing reliable systems through common archetypes and patterns. This talk explores how to identify and apply these patterns to build more robust and maintainable systems.
+In this presentation, Steve McGhee and Ameer Abbas introduce a comprehensive model for designing and operating reliable cloud services, exploring various system archetypes and their implications for reliability.
 
 ## Resources
 

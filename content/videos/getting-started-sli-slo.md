@@ -16,7 +16,7 @@ A practical guide to implementing Service Level Indicators and Objectives.
 
 ## Abstract
 
-This talk provides a comprehensive introduction to Service Level Indicators (SLIs) and Service Level Objectives (SLOs). We cover the fundamentals of SLI/SLO implementation, best practices, and how to get started with these important reliability metrics.
+This talk provides a comprehensive introduction to Service Level Indicators (SLIs) and Service Level Objectives (SLOs), drawing from Steve McGhee's experience implementing these practices at Google.
 
 ## Resources
 

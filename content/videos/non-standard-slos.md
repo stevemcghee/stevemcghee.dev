@@ -12,11 +12,11 @@ type: "video"
 
 Exploring service level objectives beyond traditional availability metrics.
 
-{{< youtube "OdLnC8sjPCI" >}}
+{{< youtube "non-standard-slos-beyond-availability" >}}
 
 ## Abstract
 
-This talk explores the concept of non-standard service level objectives (SLOs) and how they can be used to measure and improve system reliability beyond traditional availability metrics. We discuss practical examples and implementation strategies for these alternative SLOs.
+This talk delves into the world of non-standard Service Level Objectives (SLOs), moving beyond traditional availability metrics to explore more nuanced ways of measuring and ensuring service reliability.
 
 ## Resources
 
