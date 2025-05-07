@@ -19,14 +19,11 @@ In this talk, I explore how to effectively apply Site Reliability Engineering (S
 
 ### Recent Podcast: Google SRE Prodcast Season 4
 
-<audio controls>
-  <source src="https://sre.google/prodcast/transcripts/sre-prodcast-04-00/" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+[Listen to Season 4 of the Google SRE Prodcast](https://sre.google/prodcast/#season4)
 
 In this season of the Google SRE Prodcast, we explore various themes and emerging trends in site reliability engineering. The discussions cover practical implementations, challenges, and innovations in the field of SRE.
 
-[Read the transcript](https://sre.google/prodcast/transcripts/sre-prodcast-04-00/)
+[Read the transcript of the first episode here](https://sre.google/prodcast/transcripts/sre-prodcast-04-00/)
 
 ## About Me
 
