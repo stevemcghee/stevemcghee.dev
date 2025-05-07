@@ -11,7 +11,9 @@ I'm Steve McGhee, a software engineer passionate about technology, sharing knowl
 
 ## Professional Background
 
-(more to come)
+## Resume
+
+You can download my resume [here](/resume.pdf).
 
 ## Interests
 
