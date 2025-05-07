@@ -7,22 +7,22 @@ profile: true
 
 # About Me
 
-I'm Steve McGhee, a software engineer passionate about technology, sharing knowledge, and building great software. 
+I'm Steve McGhee, a software engineer passionate about reliability and building sustainable socio-technical systems. 
 
 ## Professional Background
 
+- 20+ years doing reliability-focused work at Google
+- a stint (~1y) on the outside, doing Cloud migration and architecture.
+
 ## Resume
 
-You can download my resume [here](/resume.pdf).
+You can download my resume <a href="/resume.pdf" style="text-decoration: underline;">here</a>.
 
 ## Interests
 
-- Software Engineering
+- Site Reliability Engineering
 - Public Speaking
-- Podcasting
 
-## Contact
-
-Feel free to reach out to me through:
+## Socials
 
 {{< social >}} 
