@@ -79,6 +79,10 @@ menu:
       name: "Blog"
       url: "/blog/"
       weight: 40
+    - identifier: "maxim"
+      name: "Steve's Maxim"
+      url: "/maxim/"
+      weight: 50
 
 markup:
   highlight:
