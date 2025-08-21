@@ -15,3 +15,12 @@
   description: "Coming soon"
   link: "#"
 
+- title: "Reporting on Reliability - Improving Stakeholder Conversations"
+  date: "2023-09-01"
+  event: "DevOpsDays Zurich 2023"
+  location: "Zurich, Switzerland"
+  type: "technical"
+  description: "Reporting on Reliability - Improving stakeholder conversations is a best practices presentation for how to communicate about reliability: during incidents, immediately after, and in periodic planning sessions."
+  link: "https://devopsdays.org/events/2023-zurich/program/ramon-medrano-llamas"
+  speaker: "Ramon Medrano Llamas"
+  slides_author: "Steve McGhee"
