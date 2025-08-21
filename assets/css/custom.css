@@ -29,8 +29,6 @@
 
 /* Ensure the content is properly centered and has good spacing */
 .post-content {
-    max-width: 800px;
-    margin: 0 auto;
     padding: 2rem;
 }
 
@@ -52,8 +50,9 @@
 }
 
 .post-single {
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 /* Fix menu scrolling */
