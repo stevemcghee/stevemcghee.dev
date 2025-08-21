@@ -1,6 +1,6 @@
 ---
 title: "Safe serverless deployments with Cloud Run"
-date: 2023-11-20
+date: 2023-10-26
 description: "Discusses safe serverless deployments with Cloud Run"
 event: "YouTube"
 location: "Online"

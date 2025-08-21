@@ -1,6 +1,6 @@
 ---
 title: "Observability Fundamentals: Open Standards"
-date: 2023-06-15
+date: 2022-11-16
 description: "Steve McGhee gives a lightning talk on observability"
 event: "Is It Observable"
 location: "Online"

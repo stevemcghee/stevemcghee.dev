@@ -1,6 +1,6 @@
 ---
 title: "Panel Discussion: Modern Monitoring and Observability"
-date: 2025-08-21
+date: 2023-11-03
 description: "Struggling with effective monitoring for your services? Not sure how to handle the volume of information your environment creates? Join us for a panel discussion about Monitoring and Observability, featuring Jason Hand of Datadog, Ernest Mueller of Accenture, Steve McGhee of Google, and Peco Karayanev of PagerDuty. Hosted by PagerDuty DevOps Advocate Mandi Walls."
 event: "YouTube"
 location: "Online"

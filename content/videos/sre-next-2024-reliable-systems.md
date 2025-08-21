@@ -1,6 +1,6 @@
 ---
 title: "Reliable Systems through Platform Engineering"
-date: 2024-10-01
+date: 2024-09-28
 description: "Infrastructure breaks, but systems can persist! We really want systems that withstand unavoidable failures. In this talk, Steve presents concepts like spanning failure domains and using generic mitigations through Platform Engineering."
 event: "SRE NEXT 2024"
 location: "Online"

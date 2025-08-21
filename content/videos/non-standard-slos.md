@@ -1,6 +1,6 @@
 ---
 title: "Non-standard SLOs: beyond availability"
-date: 2023-05-20
+date: 2022-11-16
 description: "Steve discusses non-standard SLOs beyond just availability"
 event: "Is It Observable"
 location: "Online"
