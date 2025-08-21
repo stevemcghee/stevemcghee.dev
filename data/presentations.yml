@@ -3,7 +3,6 @@
   event: "Presentation"
   location: "Online"
   type: "technical"
-  description: "A presentation on SRE best practices."
   link: "/presentations/_We want to adopt SRE best practices_.pdf"
 
 - title: "Building Reliable Services on the Cloud"
@@ -11,7 +10,6 @@
   event: "Presentation"
   location: "Online"
   type: "technical"
-  description: "A presentation on SRE best practices."
   link: "/presentations/Building Reliable Services on the Cloud.pdf"
 
 - title: "Failure Domains - Helpful terms"
@@ -19,7 +17,6 @@
   event: "Presentation"
   location: "Online"
   type: "technical"
-  description: "A presentation on SRE best practices."
   link: "/presentations/Failure Domains - Helpful terms.pdf"
 
 - title: "SLOs are a Lot"
@@ -27,7 +24,6 @@
   event: "Presentation"
   location: "Online"
   type: "technical"
-  description: "A presentation on SRE best practices."
   link: "/presentations/SLOs are a Lot.pdf"
 
 - title: "SREDaySF24 - DORA SRE PE"
@@ -35,7 +31,6 @@
   event: "Presentation"
   location: "Online"
   type: "technical"
-  description: "A presentation on SRE best practices."
   link: "/presentations/SREDaySF24 - DORA SRE PE.pdf"
 
 - title: "REPORTING ON RELIABILITY - IMPROVING STAKEHOLDER CONVERSATIONS"
