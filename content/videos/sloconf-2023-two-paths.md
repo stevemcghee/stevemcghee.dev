@@ -1,6 +1,6 @@
 ---
 title: "Two Paths in the Woods"
-date: "2023-02-15"
+date: 2023-10-26
 description: "Steve McGhee and Sal Furino present two independently developed methods for teaching SRE topics to customers"
 event: "SLOconf 2023"
 location: "Online"

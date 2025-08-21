@@ -1,6 +1,6 @@
 ---
 title: "Infrastructure as code"
-date: 2023-12-15
+date: 2025-08-21
 description: "Steve discusses infrastructure as code and how to get started"
 event: "YouTube"
 location: "Online"

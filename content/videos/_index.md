@@ -8,4 +8,4 @@ description: ""
 
 Here you'll find a collection of video presentations I've given at various conferences and meetups.
 
-{{< videos >}} 
+{{< videos >}}

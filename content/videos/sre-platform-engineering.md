@@ -1,6 +1,6 @@
 ---
 title: "Putting SRE Principles in Platform Engineering"
-date: 2023-07-01
+date: 2020-07-01
 description: "Steve McGhee discusses reliability and his work at Google"
 event: "YouTube"
 location: "Online"

@@ -1,6 +1,6 @@
 ---
 title: "Archetypes for Reliable Systems"
-date: 2023-09-10
+date: 2024-05-02
 description: "Steve McGhee and Ameer Abbas present a model for designing and running cloud services"
 event: "YouTube"
 location: "Online"
