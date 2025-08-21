@@ -1,6 +1,6 @@
 ---
 title: "Achieving DORA outcomes via Reliability Engineering in your Platform"
-date: 2024-09-01
+date: 2023-10-26
 description: "Achieving DORA outcomes via Reliability Engineering in your Platform."
 event: "YouTube"
 location: "Online"
