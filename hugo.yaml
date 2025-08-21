@@ -75,6 +75,10 @@ menu:
       name: "Podcasts"
       url: "/podcasts/"
       weight: 30
+    - identifier: "presentations"
+      name: "Presentations"
+      url: "/presentations/"
+      weight: 40
     
     - identifier: "etc"
       name: "Etc."
