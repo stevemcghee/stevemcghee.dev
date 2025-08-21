@@ -76,9 +76,9 @@ menu:
       url: "/podcasts/"
       weight: 30
     
-    - identifier: "maxim"
-      name: "Steve's Maxim"
-      url: "/maxim/"
+    - identifier: "etc"
+      name: "Etc."
+      url: "/etc/"
       weight: 50
 
 markup:
