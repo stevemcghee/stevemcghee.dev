@@ -19,7 +19,13 @@
             {{ with .description }}<p class="description">{{ . }}</p>{{ end }}
           </a>
           <div class="presentation-links">
+            {{ if eq .type "technical" }}
             <a href="{{ .link }}" target="_blank" class="watch-link">Download PDF</a>
+            {{ else if eq .type "website" }}
+            <a href="{{ .link }}" target="_blank" class="watch-link">Visit Site</a>
+            {{ else }}
+            <a href="{{ .link }}" target="_blank" class="watch-link">View</a>
+            {{ end }}
           </div>
         </div>
       {{ end }}
