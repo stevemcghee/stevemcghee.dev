@@ -97,7 +97,6 @@ markup:
     renderer:
       unsafe: true
     parser:
-      attribute: true
       autoHeadingID: true
       autoHeadingIDType: "github"
       attribute:
