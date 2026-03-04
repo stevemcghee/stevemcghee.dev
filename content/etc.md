@@ -19,4 +19,5 @@ Here you'll find a collection of miscellaneous documents and content.
 
 ## Other Content
 
+* [Steve's Fancy Audio Setup](/audio/)
 * [Steve's Maxim](/maxim/)
