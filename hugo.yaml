@@ -3,6 +3,8 @@ languageCode: "en-us"
 title: "Steve McGhee"
 theme: "PaperMod"
 
+disableKinds: ["RSS"]
+
 params:
   env: "production"
   description: "Personal website of Steve McGhee - Software Engineer, Speaker, and Podcaster"
@@ -14,7 +16,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
