@@ -1,10 +1,14 @@
 {{ define "main" }}
   {{ if eq .Title "About Steve McGhee" }}
     {{ partial "about_content.html" . }}
+  {{ else if .Params.hero }}
+    {{ partial "hero.html" . }}
+    <div class="about-content">
+      {{ .Content }}
+    </div>
   {{ else }}
     <main class="main">
       <article class="post-single">
-        
         <div class="post-content">
           {{ .Content }}
         </div>
@@ -12,3 +16,4 @@
     </main>
   {{ end }}
 {{ end }} 
+ 

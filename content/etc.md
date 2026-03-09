@@ -2,6 +2,9 @@
 title: "Etc."
 date: 2024-08-21
 description: "Miscellaneous documents and content."
+hero:
+  image: "/images/big-stage-empty.jpg"
+  class: "etc-hero"
 ---
 
 Here you'll find a collection of miscellaneous documents and content.

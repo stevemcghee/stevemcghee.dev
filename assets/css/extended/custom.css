@@ -342,6 +342,10 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/big-stage-name.jpg');
 }
 
+.etc-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/big-stage-empty.jpg');
+}
+
 .hero-content {
     max-width: 1000px;
     margin: 0 auto;

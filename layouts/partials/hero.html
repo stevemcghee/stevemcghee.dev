@@ -1,0 +1,12 @@
+{{ if or .Params.hero.image .Params.hero.class }}
+<div class="hero-section {{ .Params.hero.class }}" {{ if .Params.hero.image }}style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ .Params.hero.image | relURL }}');"{{ end }}>
+    <div class="hero-content">
+        <div class="text-content">
+            <h1>{{ or .Params.hero.title .Title }}</h1>
+            {{ with or .Params.hero.subtitle .Description }}
+            <p class="subtitle">{{ . }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
