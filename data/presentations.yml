@@ -73,7 +73,7 @@
   event: "DevOpsDays Zurich 2023"
   location: "Zurich, Switzerland"
   type: "website"
-  description: "Improving stakeholder conversations about reliability during incidents and periodic planning."
+  description: "Improving stakeholder conversations about reliability during incidents and periodic planning. This presentation explores best practices for communicating about reliability during incidents, immediately after, and in periodic planning sessions, moving from a reactive approach to a collaborative, strategic one."
   link: "https://devopsdays.org/events/2023-zurich/program/ramon-medrano-llamas"
   speaker: "Ramon Medrano Llamas"
   slides_author: "Steve McGhee"

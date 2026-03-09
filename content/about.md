@@ -29,7 +29,7 @@ After a brief "summer vacation" working on cloud migration and architecture at a
 
 ## Resume
 
-You can download my latest resume <a href="/resume.pdf" class="read-link" style="color: white !important;">here</a>.
+You can download my latest resume <a href="/resume.pdf" class="read-link">here</a>.
 
 ## Socials
 

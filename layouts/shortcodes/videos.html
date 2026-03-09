@@ -1,41 +1,39 @@
 <!-- Videos List Template -->
 <div class="videos-list">
-  {{ range (where .Page.Site.RegularPages "Section" "videos").ByDate.Reverse }}
+  {{ range sort .Site.Data.videos "date" "desc" }}
     <div class="video-entry">
-      <a href="{{ .RelPermalink }}" class="video-link">
-        {{ if .Params.video }}
+      <a href="{{ .video }}" class="video-link" target="_blank">
+        {{ if .video }}
           {{ $videoID := "" }}
-          {{ if (findRE "v=([^&?]+)" .Params.video) }}
-            {{ $videoID = index (findRE "v=([^&?]+)" .Params.video) 0 }}
+          {{ if (findRE "v=([^&?]+)" .video) }}
+            {{ $videoID = index (findRE "v=([^&?]+)" .video) 0 }}
             {{ $videoID = replace $videoID "v=" "" }}
-          {{ else if (findRE "youtu.be/([^&?]+)" .Params.video) }}
-            {{ $videoID = index (findRE "youtu.be/([^&?]+)" .Params.video) 0 }}
+          {{ else if (findRE "youtu.be/([^&?]+)" .video) }}
+            {{ $videoID = index (findRE "youtu.be/([^&?]+)" .video) 0 }}
             {{ $videoID = replace $videoID "youtu.be/" "" }}
           {{ end }}
           {{ if $videoID }}
             <div class="video-thumbnail">
-              <img src="https://img.youtube.com/vi/{{ $videoID }}/hqdefault.jpg" alt="{{ .Title }}" loading="lazy">
+              <img src="https://img.youtube.com/vi/{{ $videoID }}/hqdefault.jpg" alt="{{ .title }}" loading="lazy">
               <div class="play-button">▶</div>
             </div>
           {{ end }}
         {{ end }}
-        <h3>{{ .Title }}</h3>
+        <h3>{{ .title }}</h3>
         <div class="video-metadata">
-          {{ with .Date }}<p class="date">{{ .Format "January 2, 2006" }}</p>{{ end }}
-          {{ with .Params.event }}<p class="event">{{ . }}</p>{{ end }}
-          {{ with .Params.location }}<p class="location">{{ . }}</p>{{ end }}
+          {{ with .date }}<p class="date">{{ . | dateFormat "January 2, 2006" }}</p>{{ end }}
+          {{ with .event }}<p class="event">{{ . }}</p>{{ end }}
+          {{ with .location }}<p class="location">{{ . }}</p>{{ end }}
         </div>
-        {{ with .Description }}<p class="description">{{ . }}</p>{{ end }}
+        {{ with .abstract }}<p class="description">{{ . }}</p>{{ end }}
       </a>
       <div class="video-links">
-        {{ with .Params.slides }}<a href="{{ . }}" target="_blank" class="slides-link">View Slides</a>{{ end }}
-        {{ with .Params.video }}<a href="{{ . }}" target="_blank" class="video-link">Watch Video</a>{{ end }}
-        {{ with .Params.resources }}<a href="{{ . }}" target="_blank" class="resources-link">Additional Resources</a>{{ end }}
+        {{ with .slides }}<a href="{{ . }}" target="_blank" class="slides-link">View Slides</a>{{ end }}
+        {{ with .video }}<a href="{{ . }}" target="_blank" class="watch-link">Watch Video</a>{{ end }}
+        {{ with .resources }}<a href="{{ . }}" target="_blank" class="resources-link">Additional Resources</a>{{ end }}
       </div>
     </div>
   {{ else }}
     <p>No videos found.</p>
   {{ end }}
 </div>
-
- 
