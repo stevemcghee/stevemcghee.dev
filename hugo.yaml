@@ -59,7 +59,6 @@ params:
     enable: true
     twitter: true
     linkedin: true
-    facebook: false
 
 menu:
   main:
@@ -79,7 +78,10 @@ menu:
       name: "Presentations"
       url: "/presentations/"
       weight: 40
-    
+    - identifier: "publications"
+      name: "Publications"
+      url: "/publications/"
+      weight: 45
     - identifier: "etc"
       name: "Etc."
       url: "/etc/"

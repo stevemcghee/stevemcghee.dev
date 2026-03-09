@@ -1,0 +1,34 @@
+<!-- Publication List Template -->
+<div class="publications-list">
+  {{ $publications := .Site.Data.publications | default slice }}
+  {{ if $publications }}
+    {{ $publications = sort $publications "date" "desc" }}
+    {{ range $publications }}
+      <div class="publication-entry">
+        <a href="{{ .link }}" class="publication-link" target="_blank">
+          <h3>{{ .title }}</h3>
+          <div class="publication-metadata">
+            {{ with .date }}<p class="date">{{ . | dateFormat "January 2, 2006" }}</p>{{ end }}
+            {{ with .authors }}<p class="authors">Authors: {{ . }}</p>{{ end }}
+            {{ with .publisher }}<p class="publisher">Publisher: {{ . }}</p>{{ end }}
+          </div>
+          {{ with .description }}<p class="description">{{ . }}</p>{{ end }}
+        </a>
+        <div class="publication-links">
+          {{ if eq .type "report" }}
+          <a href="{{ .link }}" target="_blank" class="read-link">Read Report</a>
+          {{ else if eq .type "article" }}
+          <a href="{{ .link }}" target="_blank" class="read-link">Read Article</a>
+          {{ else }}
+          <a href="{{ .link }}" target="_blank" class="read-link">View</a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  {{ else }}
+    <div class="publication-entry">
+      <p class="tbd">TBD</p>
+    </div>
+  {{ end }}
+</div>
+

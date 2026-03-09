@@ -1,15 +1,20 @@
-# Example podcast entry - replace with your actual podcast appearances
-#- title: "Example Podcast Appearance"
-#  date: "2024-03-20"
-#  show: "Sample Tech Show"
-#  description: "Discussion about technology and engineering leadership"
-#  link: "https://example.com/podcast-episode" 
+- title: "Google SRE Prodcast Season 3"
+  date: "2024-09-01"
+  show: "Google SRE Prodcast"
+  description: "Steve is the primary host for Season 3, themed 'Champions of the Internet' - exploring software systems designed and built by SREs."
+  link: "https://sre.google/prodcast/"
 
-- title: "Slight Reliability Episode 7"
+- title: "Slight Reliability Episode 75"
   date: "2023-11-14"
   show: "Slight Reliability"
   description: "A conversation about reliability engineering and SRE practices with Stephen Townshend"
-  link: "https://www.linkedin.com/posts/stephentownshend_slight-reliability-episode-7-activity-713123456789"
+  link: "https://www.youtube.com/watch?v=UHSXsoCnqQM"
+
+- title: "The Reliability Diagnosis"
+  date: "2023-10-15"
+  show: "Humans of Reliability"
+  description: "Steve discusses debugging, incident response, and his journey from OG SRE to Reliability Advocate."
+  link: "https://podcasts.apple.com/us/podcast/the-reliability-diagnosis-googles-steve-mcghee-on/id1792427573?i=1000690846276"
 
 - title: "SRE III with Steve McGhee and Yuri Grinshteyn"
   date: "2023-01-15"

@@ -2,9 +2,9 @@
 title: "SRE in Enterprise"
 date: 2022-10-01
 description: "Steve McGhee and James Brookbank discuss challenges and strategies for SRE adoption in enterprises, based on the 'Enterprise Roadmap for SRE' O'Reilly report."
-event: "USENIX"
+event: "SREcon22 EMEA"
 location: "Unknown"
-video: "https://www.usenix.org/conference/srecon22americas/presentation/mcghee"
+video: "https://www.usenix.org/conference/srecon22emea/presentation/mcghee"
 type: "video"
 ---
 
@@ -16,4 +16,4 @@ Steve McGhee and James Brookbank present on the "Enterprise Roadmap for SRE" O'R
 
 ## Resources
 
-*   [USENIX Presentation Page](https://www.usenix.org/conference/srecon22americas/presentation/mcghee)
+*   [USENIX Presentation Page](https://www.usenix.org/conference/srecon22emea/presentation/mcghee)
