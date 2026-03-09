@@ -53,16 +53,21 @@ body {
 }
 
 /* Make links pop with color */
-.post-content a {
+.post-content a, .about-content a, .entry-content a {
     color: var(--brand-blue);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.post-content a:hover {
+.post-content a:hover, .about-content a:hover, .entry-content a:hover {
     color: var(--brand-blue-hover);
     border-bottom: 1px solid var(--brand-blue-hover);
+}
+
+/* Ensure links in text stand out if they are not blue for some reason */
+p a, li a {
+    color: var(--brand-blue);
 }
 
 /* Improve header styling */
@@ -221,24 +226,24 @@ body {
     border: 1px solid transparent;
 }
 
-.slides-link, .watch-link, .read-link {
+.slides-link, .read-link {
     background-color: var(--tertiary);
     color: var(--primary) !important;
     border-color: var(--border) !important;
 }
 
-.slides-link:hover, .watch-link:hover, .read-link:hover {
+.slides-link:hover, .read-link:hover {
     background-color: var(--brand-blue) !important;
     color: #ffffff !important;
     border-color: var(--brand-blue) !important;
 }
 
-.video-link, .listen-link {
+.video-link, .listen-link, .watch-link {
     background-color: var(--brand-blue);
     color: #ffffff !important;
 }
 
-.video-link:hover, .listen-link:hover {
+.video-link:hover, .listen-link:hover, .watch-link:hover {
     background-color: var(--brand-blue-hover) !important;
     box-shadow: 0 2px 4px rgba(26, 115, 232, 0.3);
 }

@@ -4,9 +4,15 @@
     <div class="video-entry">
       <a href="{{ .RelPermalink }}" class="video-link">
         {{ if .Params.video }}
-          {{ $videoID := index (findRE "v=([^&]+)" .Params.video 1) 0 }}
-          {{ if $videoID }}
+          {{ $videoID := "" }}
+          {{ if (findRE "v=([^&?]+)" .Params.video) }}
+            {{ $videoID = index (findRE "v=([^&?]+)" .Params.video) 0 }}
             {{ $videoID = replace $videoID "v=" "" }}
+          {{ else if (findRE "youtu.be/([^&?]+)" .Params.video) }}
+            {{ $videoID = index (findRE "youtu.be/([^&?]+)" .Params.video) 0 }}
+            {{ $videoID = replace $videoID "youtu.be/" "" }}
+          {{ end }}
+          {{ if $videoID }}
             <div class="video-thumbnail">
               <img src="https://img.youtube.com/vi/{{ $videoID }}/hqdefault.jpg" alt="{{ .Title }}" loading="lazy">
               <div class="play-button">▶</div>
