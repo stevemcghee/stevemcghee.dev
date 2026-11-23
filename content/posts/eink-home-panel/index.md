@@ -26,7 +26,7 @@ A day of back-and-forth later, it looks like this:
 | USB-C data cable, for the first flash only | 1 | probably in a drawer already | $0 |
 | *Optional:* ratgdo32, for the garage door. Includes a USB cable, power supply, and wire harness. | 1 | [ratcloud.llc](https://ratcloud.llc/products/ratgdo32) | $62.00 |
 | Raspberry Pi 4 Model B (4 GB), to run Home Assistant and ESPHome. One is plenty; we run 5 in a k3s cluster. | 1 (we have 5) | [adafruit.com](https://www.adafruit.com/product/4296) | $120.00 each (its original list price was $55) |
-| Home Assistant, ESPHome | | [home-assistant.io](https://www.home-assistant.io/), [esphome.io](https://esphome.io/) | free |
+| Home Assistant, ESPHome, ha-mcp | | [home-assistant.io](https://www.home-assistant.io/), [esphome.io](https://esphome.io/), [ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | free |
 | **Total** | | | **~$264** with one Pi, **~$326** with the garage door too (**~$144** if you already run Home Assistant) |
 
 Prices were checked on 2026-11-23 and don't include shipping or tax. A Pi also needs a USB-C
@@ -49,6 +49,11 @@ like this.
 Everything else was stuff I already had: Home Assistant and a small Raspberry Pi Kubernetes
 cluster, plus Sonos, Spotify, Lutron lights, the pool controller, Hydrawise irrigation, Sense,
 and solar with Powerwalls.
+
+One piece of setup made a big difference: I'd already connected Claude Code to Home Assistant
+with [ha-mcp](https://github.com/homeassistant-ai/ha-mcp), an MCP server. That meant Claude
+could look up my actual entities, test things, and read the logs itself, instead of asking me
+to copy and paste from the Home Assistant UI.
 
 ## What I asked for
 
@@ -143,6 +148,31 @@ The panel is a dumb terminal, and Home Assistant holds the logic.
 - **Why this split:** changing favorites, rooms, or scenes takes only a `script.reload` or
   `template.reload`, which is seconds. A panel compile plus OTA update takes several minutes
   on a Pi.
+
+### Talking to Home Assistant: ha-mcp
+
+- **What it is:** [ha-mcp](https://github.com/homeassistant-ai/ha-mcp), an MCP server for Home
+  Assistant. Here it runs inside Home Assistant as a HACS custom component
+  ([ha-mcp-integration](https://github.com/homeassistant-ai/ha-mcp-integration)), so no
+  long-lived access token is stored anywhere. Claude Code connects over HTTP. The secret URL
+  path is the credential, so treat it like a password, and keep it on your LAN.
+- **What it was used for:**
+  - finding entity IDs and their attributes (`ha_search`, `ha_get_state`, `ha_get_entity`)
+    before writing any panel code;
+  - testing Jinja in `ha_eval_template` before putting it in a template sensor, which is how
+    the compact strings above were shaped to fit 255 characters;
+  - calling actions directly (`ha_call_service`): playing a Spotify link on a Sonos, moving
+    the garage door, reloading `template` and `script`;
+  - reading `ha_get_history`, `ha_get_logs`, and script traces
+    (`ha_get_automation_traces`) to see what really happened after the human tapped.
+    That's how the first kitty-mode attempt was shown to run the door fully open;
+  - changing integration options (`ha_set_integration`).
+- **What it wasn't used for:** the packages are YAML files in git. Those were copied into the
+  Home Assistant pod, checked with `python -m homeassistant --script check_config`, and then
+  reloaded. The MCP server is for reading the live house and testing against it, not for
+  where the configuration lives.
+- **It ships a best-practices guide** (`ha_get_skill_guide`). Read it before writing
+  automations or scripts.
 
 ### Hardware facts (reTerminal E1003)
 
@@ -245,3 +275,4 @@ The panel is a dumb terminal, and Home Assistant holds the logic.
 - [Material Design Icons](https://pictogrammers.com/library/mdi/)
 - [WCH CH34x macOS driver](https://github.com/WCHSoftGroup/ch34xser_macos)
 - [ratgdo for ESPHome](https://github.com/ratgdo/esphome-ratgdo)
+- [ha-mcp](https://github.com/homeassistant-ai/ha-mcp), the Home Assistant MCP server
