@@ -61,8 +61,7 @@ Roughly in order, and roughly in the words I used:
    Sonos.
 4. **"Add a button to turn KCBX on/off."** (KCBX is our local NPR station. The button doesn't
    use Sonos Radio: Home Assistant finds the station's stream through its Radio Browser
-   integration and tells the kitchen Sonos to play it.) And take away the "windows
-   open/closed" bar, because we already get a spoken reminder for that once a day.
+   integration and tells the kitchen Sonos to play it.)
 5. **"Add a spot for album art / the radio logo."**
 6. **"I prefer graphics to wordy."** Weather icon, temperature sparklines instead of raw
    numbers, and whatever else fits that idea.
