@@ -1,7 +1,7 @@
 ---
 title: "A 10-inch e-paper control panel for Home Assistant"
 date: 2026-11-23
-draft: true
+draft: false
 tags: ["home-assistant", "esphome", "e-paper", "homelab", "claude-code"]
 summary: "I put a Seeed reTerminal E1003 on the kitchen counter and, in about a day of back-and-forth with Claude Code, turned it into a house status board with touch pages for music, lights, the pool, and a garage-door 'kitty mode'."
 ShowToc: true
