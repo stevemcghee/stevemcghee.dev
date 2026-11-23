@@ -44,7 +44,9 @@ Roughly in order, and roughly in the words I used:
 2. **"Design the page."** A status board with house info at a glance.
 3. **"Use the touchscreen for lights-out, and a music panel."** All lights, and the kitchen
    Sonos.
-4. **"Add a button to turn our local radio station on/off."** And take away the "windows
+4. **"Add a button to turn KCBX on/off."** (KCBX is our local NPR station. The button doesn't
+   use Sonos Radio: Home Assistant finds the station's stream through its Radio Browser
+   integration and tells the kitchen Sonos to play it.) And take away the "windows
    open/closed" bar, because we already get a spoken reminder for that once a day.
 5. **"Add a spot for album art / the radio logo."**
 6. **"I prefer graphics to wordy."** Weather icon, temperature sparklines instead of raw
@@ -160,6 +162,11 @@ The panel is a dumb terminal, and Home Assistant holds the logic.
 - **Album art.** Use `online_image` with a `JPEG`, `GRAYSCALE` image, `resize` set, and
   `update_interval: never`. Set its URL to Home Assistant's base URL plus `entity_picture`,
   the proxied `/api/media_player_proxy/…?token=` path.
+- **One-tap radio.** KCBX plays as
+  `media-source://radio_browser/<station-uuid>` via `media_player.play_media`
+  (`media_content_type: music`). The Sonos then reports the raw stream URL
+  (`x-rincon-mp3radio://…/kcbx-hi`) as `media_content_id`. The button treats "playing, and the
+  content ID contains `kcbx`" as on.
 - **Radio placeholder titles.** Sonos reports stream titles like `ZPSTR_CONNECTING`. Map
   those, plus any known stream URLs in `media_content_id`, to a friendly name.
 
