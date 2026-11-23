@@ -25,11 +25,12 @@ A day of back-and-forth later, it looks like this:
 | Seeed reTerminal E1003 (10.3" touch e-paper, ESP32-S3) | 1 | [seeedstudio.com](https://www.seeedstudio.com/reTerminal-E1003-p-6731.html) | $143.91 (on sale; list $159.90) |
 | USB-C data cable, for the first flash only | 1 | probably in a drawer already | $0 |
 | *Optional:* ratgdo32, for the garage door. Includes a USB cable, power supply, and wire harness. | 1 | [ratcloud.llc](https://ratcloud.llc/products/ratgdo32) | $62.00 |
+| Raspberry Pi 4 Model B (4 GB), to run Home Assistant and ESPHome. One is plenty; we run 5 in a k3s cluster. | 1 (we have 5) | [adafruit.com](https://www.adafruit.com/product/4296) | $120.00 each (list was $55; RAM prices) |
 | Home Assistant, ESPHome | | [home-assistant.io](https://www.home-assistant.io/), [esphome.io](https://esphome.io/) | free |
-| **Total** | | | **~$144** for the panel, **~$206** with the garage door |
+| **Total** | | | **~$264** with one Pi, **~$326** with the garage door too (**~$144** if you already run Home Assistant) |
 
-Prices were checked on 2026-11-23 and don't include shipping or tax. I already had something to
-run Home Assistant and ESPHome on (a few Raspberry Pis). I built it with Claude Code, which
+Prices were checked on 2026-11-23 and don't include shipping or tax. A Pi also needs a USB-C
+power supply and a microSD card, which aren't counted here. I built it with Claude Code, which
 comes with a Claude subscription.
 
 This post is in two parts. The first part is what I did: what I bought, what I asked for, and
